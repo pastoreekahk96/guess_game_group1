@@ -40,7 +40,7 @@ function checkGuess() {
   attempts++;
   previousGuesses.push(userGuess);
 
-  // Update localStorage
+  // This our Update localStorage
   localStorage.setItem("attempts", attempts);
   localStorage.setItem("previousGuesses", JSON.stringify(previousGuesses));
 
@@ -64,7 +64,7 @@ function checkGuess() {
   guessInput.focus();
 }
 
-// --- End Game ---
+// --- This is Ending of the  Game ---
 function endGame() {
   guessInput.disabled = true;
   submitGuess.disabled = true;
