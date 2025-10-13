@@ -67,3 +67,16 @@ guessInput.addEventListener('keyup', function(event) {
         checkGuess();
     }
 });
+
+ function resetGame() {
+      // Clear localStorage and reset the game
+      localStorage.removeItem("randomNumber");
+      localStorage.removeItem("attempts");
+      randomNumber = Math.floor(Math.random() * 100) + 1;
+      localStorage.setItem("randomNumber", randomNumber);
+      attempts = 0;
+      localStorage.setItem("attempts", attempts);
+      document.getElementById("attemptsCount").textContent = attempts;
+      document.getElementById("result").textContent = "Game reset! Guess again.";
+      document.getElementById("userGuess").value = "";
+    }
