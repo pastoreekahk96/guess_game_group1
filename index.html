@@ -3,20 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Group 1 Guess Game</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Guess the Number</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="game-container" ><h1>Hey, Welcome to Group 1 Guess The Number Game</h1>
-    <p> Guess any number between 1 and 100 </p>
-    <p>Give it a Try! GoodLuck!!!!</p>
-
-    <input type="number" id="guess-input" placeholder="Enter your guess">
-<button id="guess-button">Submit your Guess</button>
-<p id="result-message"></p>
-
-    
-</div>
-    
+    <div class="game-container">
+        <h1>Guess the Number!</h1>
+        <p>I'm thinking of a number between 1 and 100.</p>
+        <div class="input-area">
+            <input type="number" id="guessInput" placeholder="Enter your guess">
+            <button id="submitGuess">Submit Guess</button>
+        </div>
+        <div class="result-area">
+            <p>Attempts: <span id="attempts">0</span></p>
+            <p>Previous Guesses: <span id="previousGuesses"></span></p>
+            <p id="feedback"></p>
+        </div>
+        <button id="resetGame">Reset Game</button>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
