@@ -45,3 +45,5 @@ This simple Express server receives submissions from JoinUs and ContactUs forms 
 ## Notes
 - The destination email defaults to `pccliberia2025@gmail.com`. You can override it with `TO_EMAIL`.
 - `FROM_EMAIL` must be a valid sender for your SMTP provider.
+- `CORS_ORIGIN` can be set to a comma-separated list of allowed origins.
+- The server adds sender metadata like IP and user-agent to the email body.
